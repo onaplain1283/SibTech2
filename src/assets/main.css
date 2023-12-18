@@ -1,4 +1,8 @@
 /* // reset everything */
+:root {
+  --fluid: 300px ;
+}
+
 *,
 *::before,
 *::after {
@@ -9,6 +13,7 @@
   margin: 0;
   padding: 0;
   border: 0 solid transparent;
+  
 }
 
 /* // prevent iOS font size change */
@@ -18,9 +23,21 @@ html {
 
 /* // reset body line-height */
 body {
-  min-height: 100vh;
+  min-height: 100vh
+  min-height: 100svh;
   line-height: 1;
   text-rendering: optimizeSpeed;
+}
+
+Accessibility concerns
+
+/* Use a minimum value of 1.5 for line-height for main paragraph content. 
+This will help people experiencing low vision conditions, as well as people with cognitive concerns such as Dyslexia. 
+If the page is zoomed to increase the text size, using a unitless value ensures that the line height will scale proportionately.
+ source = https://developer.mozilla.org/en-US/docs/Web/CSS/line-height */
+
+p{
+  line-height: 1.5;
 }
 
 /* // all media elements set to block and full width */
