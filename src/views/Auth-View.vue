@@ -9,6 +9,7 @@ import FormComponent from '@/components/Form-Component.vue'
         <img class="auth_logo" src="@/components/icons/logo.svg" alt="Томский политех" />
         <h1 class="auth_header">Авторизация</h1>
         <FormComponent></FormComponent>
+
         <section class="auth_info_container">
           <p class="info">
             Если возникла проблема, то можете
